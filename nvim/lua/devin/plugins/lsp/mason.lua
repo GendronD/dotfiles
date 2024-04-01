@@ -30,7 +30,7 @@ local servers = {
 	"vuels",
 	"graphql",
 	"eslint",
-	"dartls",
+	-- 	"dartls",
 }
 
 -- enable mason
