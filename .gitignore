@@ -1,0 +1,12 @@
+configstore/
+flutter/
+fish/fish_variables
+iterm2/
+jellyfin/
+kitty/
+NuGet/
+stetic/
+xbuild/
+yarn/
+.mono/
+.DS_Store

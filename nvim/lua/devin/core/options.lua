@@ -1,0 +1,69 @@
+-------------------------------------------------------------------------------
+-- General Neovim Settings and Configuration
+-------------------------------------------------------------------------------
+
+-- Default options are not included
+-- See: https:/neovim.io/doc/user/vim_diff.html
+-- [2] Defaults - *nvim-defaults*
+
+local g = vim.g -- Global Variables
+local opt = vim.opt -- Set Options (Global/Buffer/Windows-Scoped)
+
+-------------------------------------------------------------------------------
+-- General
+-------------------------------------------------------------------------------
+-- opt.mouse = 'a'                          -- Enable Mouse Support
+opt.swapfile = true -- Buffer Cache
+opt.clipboard:append("unnamedplus") -- Copy/Paste to System Keyboard
+opt.completeopt = "menuone,noinsert,noselect" -- Autocomplete Options
+opt.swapfile = true -- Do/Don't Use Swapfile
+
+-------------------------------------------------------------------------------
+-- Neovim UI
+-------------------------------------------------------------------------------
+opt.relativenumber = true -- Shows Lines Relative to Line
+opt.number = true -- Show Line Number
+-- opt.colorcolumn = "80"
+g.nightflyTransparent = true -- Set Transparency to Background Colors
+opt.signcolumn = "yes"
+opt.termguicolors = true -- Enable 24-bit RGB Colors
+opt.showmatch = true -- Higlight Matching Parenthesese
+opt.foldmethod = "marker" -- Enable Folding (default 'foldmarker')
+opt.linebreak = true -- Wrap on Word Boundary
+
+-- Search
+opt.smartcase = true -- Ignore Lowercase for Whole Pattern
+opt.ignorecase = true -- Ignore Case Letters when Searching
+
+-- Split Windows
+opt.splitbelow = true
+opt.splitright = true
+
+-- Cursor
+opt.cursorline = false
+
+-------------------------------------------------------------------------------
+-- Tabs & Indentation
+-------------------------------------------------------------------------------
+opt.tabstop = 4 -- 1 Tab == 4 Spaces
+opt.shiftwidth = 4 -- Shift 4 Spaces when Tabbing
+opt.expandtab = true -- Use Spaces Instead of Tabs
+opt.autoindent = true -- Auto-Indent
+opt.smartindent = true -- Auto-Indent New Lines
+
+-- Line Wrapping
+opt.wrap = false
+
+-- Backspace
+opt.backspace = "indent,eol,start"
+
+opt.iskeyword:append("-")
+
+-------------------------------------------------------------------------------
+-- Memory, CPU
+-------------------------------------------------------------------------------
+opt.hidden = true -- Enable Background Buffers
+opt.history = 100 -- Remembers N Lines of History
+opt.lazyredraw = true -- Faster Scrolling
+opt.synmaxcol = 240 -- Max Column for Syntax Highlight
+opt.updatetime = 250 -- ms to Wait for Trigger to an Event
