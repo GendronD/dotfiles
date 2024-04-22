@@ -21,6 +21,7 @@ opt.swapfile = true -- Do/Don't Use Swapfile
 -------------------------------------------------------------------------------
 -- Neovim UI
 -------------------------------------------------------------------------------
+vim.cmd("let g:netrw_liststyle = 3")
 opt.relativenumber = true -- Shows Lines Relative to Line
 opt.number = true -- Show Line Number
 -- opt.colorcolumn = "80"
