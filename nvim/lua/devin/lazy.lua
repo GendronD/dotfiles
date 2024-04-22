@@ -12,7 +12,7 @@ end
 
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup("devin.plugins", {
+require("lazy").setup({ { import = "devin.plugins" }, {import = "devin.plugins.lsp" } }, {
     checker = {
         enabled = true,
         notify = false,
